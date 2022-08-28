@@ -1,0 +1,39 @@
+{
+   "name": "discord-ts-boilerplate",
+   "private": "true",
+   "description": "A Discord bot boilerplate written in Typescript, including Prettier and ESLint",
+   "version": "1.0.0-alpha1",
+   "scripts": {
+      "prestart:win": "rmdir /s /q \"dist\" && tsc",
+      "prestart:darwin": "clear && rm -rf dist && tsc",
+      "start": "node dist/src/deploy",
+      "dev:win": "yarn prestart:win && yarn start",
+      "dev:darwin": "yarn prestart:darwin && yarn start"
+   },
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/1000snowy/discord-ts-boilerplate.git"
+   },
+   "bugs": {
+      "url": "https://github.com/1000snowy/discord-ts-boilerplate/issues"
+   },
+   "engines": {
+      "node": ">=16.16.0"
+   },
+   "license": "Apache-2.0",
+   "dependencies": {
+      "discord.js": "^14.3.0",
+      "@discordjs/builders": "^1.2.0",
+      "discord-api-types": "^0.37.5",
+      "fastify": "^4.5.3",
+      "typescript": "^4.8.2",
+      "yargs-parser": "^21.1.1",
+      "dotenv": "^16.0.1",
+      "chalk": "4.1.2"
+   },
+   "devDependencies": {
+      "eslint": "7.32.0",
+      "@typescript-eslint/eslint-plugin": "^5.35.1",
+      "@typescript-eslint/parser": "^5.35.1"
+   }
+}
