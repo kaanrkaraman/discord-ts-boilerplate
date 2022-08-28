@@ -1,5 +1,7 @@
 # Custom ignores
 dist
+.DS_Store
+src/.DS_Store
 
 # Logs
 logs

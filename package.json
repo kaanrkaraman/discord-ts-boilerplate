@@ -2,7 +2,7 @@
    "name": "discord-ts-boilerplate",
    "private": "true",
    "description": "A Discord bot boilerplate written in Typescript, including Prettier and ESLint",
-   "version": "1.0.0-alpha1",
+   "version": "1.0.0-beta1",
    "scripts": {
       "prestart:win": "rmdir /s /q \"dist\" && tsc",
       "prestart:darwin": "clear && rm -rf dist && tsc",
